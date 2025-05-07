@@ -340,13 +340,15 @@
         }
 
         /* Video Section */
-       .video-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
 
         .video-container iframe {
             position: absolute;
@@ -1296,30 +1298,26 @@
             </div>
         </section>
 
-       <!-- About Section -->
-<section class="about" id="about">
-    <h2 class="section-title">Quiénes Somos</h2>
+        <!-- About Section -->
+        <section class="about" id="about">
+            <h2 class="section-title">Quiénes Somos</h2>
 
-    <div class="video-container">
-        <!-- Etiqueta de video correcta -->
-        <video controls width="100%" style="max-width: 800px; border-radius: 12px;">
-            <source src="COMERCIAL1.mp4" type="video/mp4">
-            Tu navegador no soporta la reproducción de video.
-        </video>
-    </div>
+            <div class="video-container">
+                <!-- Reemplaza la URL del video con tu propio archivo -->
+                <iframe width="560" height="315" src="COMERCIAL.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-    <div class="about-content">
-        <div class="about-card">
-            <h3>Misión</h3>
-            <p>En DoomFrame Store, nuestra misión es ser el puente que conecta a nuestros clientes con la tecnología más avanzada...</p>
-        </div>
-        <div class="about-card">
-            <h3>Visión</h3>
-            <p>Aspiramos a ser la empresa líder en el mercado tecnológico, reconocida por nuestro compromiso con la excelencia...</p>
-        </div>
-    </div>
-</section>
-
+            <div class="about-content">
+                <div class="about-card">
+                    <h3>Misión</h3>
+                    <p>En DoomFrame Store, nuestra misión es ser el puente que conecta a nuestros clientes con la tecnología más avanzada y de calidad superior. Nos dedicamos a proporcionar equipos y componentes seleccionados rigurosamente, adaptados a las necesidades de cada usuario, ya sea para el entretenimiento, el estudio o la productividad profesional. Con un enfoque en la innovación, la sostenibilidad y el soporte personalizado, trabajamos día a día para que cada compra se traduzca en una experiencia transformadora y confiable.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Visión</h3>
+                    <p>Aspiramos a ser la empresa líder en el mercado tecnológico, reconocida por nuestro compromiso con la excelencia y la innovación constante. Imaginamos un futuro donde la tecnología esté al servicio de la productividad y el bienestar de las personas, transformando la experiencia digital en una herramienta accesible y empoderadora para todos. Conectando cada componente de nuestro servicio como si de un circuito se tratase, forjamos un camino de crecimiento y renovación que inspire y trascienda en el tiempo.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Valores Section -->
         <section class="valores" id="valores">
